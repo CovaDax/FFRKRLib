@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FFRKR_Repository {
-    class Program {
-        static void Main(string[] args) {
-        }
+namespace FFRKR.Core.Models {
+    public class RecordMateria {
     }
 }

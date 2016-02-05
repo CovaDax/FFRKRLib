@@ -7,8 +7,8 @@
     <ProjectGuid>{B05837F2-7ADA-48B1-BC5E-87F5C735A2D2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FFRKRLib</RootNamespace>
-    <AssemblyName>FFRKRLib</AssemblyName>
+    <RootNamespace>FFRKR.Core</RootNamespace>
+    <AssemblyName>FFRKR Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PublishUrl>publish\</PublishUrl>
@@ -55,9 +55,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IAbilityRepository.cs" />
-    <Compile Include="Interfaces\IModelRepository.cs" />
     <Compile Include="Models\Ability.cs" />
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\Hero.cs" />
+    <Compile Include="Models\Inventory.cs" />
+    <Compile Include="Models\MemoryCrystal.cs" />
+    <Compile Include="Models\RecordMateria.cs" />
+    <Compile Include="Models\Relic.cs" />
+    <Compile Include="Models\RelicRepository.cs" />
+    <Compile Include="Models\SoulBreak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +81,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FFRKR Interfaces\FFRKR Interfaces.csproj">
+      <Project>{34213c76-eca5-443b-b0ff-5d2f42ddb653}</Project>
+      <Name>FFRKR Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FFRKR Repository\FFRKR Repository.csproj">
+      <Project>{3886c5d5-35bb-4b5c-bc20-6d4635337464}</Project>
+      <Name>FFRKR Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

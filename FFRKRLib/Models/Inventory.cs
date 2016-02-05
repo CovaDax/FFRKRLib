@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FFRKR.Repository {
-    public class DB {
+namespace FFRKR.Core.Models {
+    public class Inventory {
     }
 }

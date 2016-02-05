@@ -7,7 +7,7 @@
     <ProjectGuid>{BC88136A-D6B9-4D53-8BA6-4A2491834560}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FFRKR_Hone_Calculator</RootNamespace>
+    <RootNamespace>FFRKR.Hone.Calculator</RootNamespace>
     <AssemblyName>FFRKR Hone Calculator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
