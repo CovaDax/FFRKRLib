@@ -40,8 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\IAbility.cs" />
+    <Compile Include="Models\ISoulbreak.cs" />
+    <Compile Include="Repository\IAbilityRepository.cs" />
+    <Compile Include="Models\IEvent.cs" />
+    <Compile Include="Models\IHero.cs" />
+    <Compile Include="Repository\IHeroRepository.cs" />
+    <Compile Include="IModelRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IMemoryCrystal.cs" />
+    <Compile Include="Repository\IRecordMateria.cs" />
+    <Compile Include="Models\IRelic.cs" />
+    <Compile Include="Repository\IRelicRepository.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

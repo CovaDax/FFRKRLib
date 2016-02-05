@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FFRKRLib.Interfaces {
+namespace FFRKR.Interfaces {
     public interface IModelRepository {
         IEnumerable<T> GetAll<T>();
         IEnumerable<T> GetAllByColumn<T>(string column);
