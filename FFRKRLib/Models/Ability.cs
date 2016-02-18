@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FFRKR.Interfaces;
+using FFRKR.Repository;
 
 namespace FFRKR.Core.Models {
     public class Ability : IAbility {
@@ -20,7 +21,7 @@ namespace FFRKR.Core.Models {
         private double _multiplier;
         private bool _maxed;
         private bool _crafted;
-        IAbilityRepository _repo;
+        AbilityRepository _repo;
         #endregion
 
         #region Properties

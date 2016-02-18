@@ -7,29 +7,29 @@ using System.Data;
 using FFRKR.Interfaces;
 
 namespace FFRKR.Interfaces {
-    public interface IHeroRepository : IDisposable {
-        IEnumerable<IHero> GetAllHeroes();
-        IEnumerable<IHero> GetHeroesByStat(string stat);
-        IEnumerable<IHero> GetHeroesByRealm(string realm);
-        IEnumerable<IHero> GetHeroesByEquipment(string equipment);
-        IEnumerable<IHero> GetHeroesByAbility(string ability);
-        IEnumerable<IHero> GetHeroesByEvent(IEvent _event);
-        IEnumerable<IHero> GetHeroesFromDungeons();
+    public interface IHeroRepository<T> {
+        IEnumerable<T> GetAllHeroes();
+        IEnumerable<T> GetHeroesByStat(string stat);
+        IEnumerable<T> GetHeroesByRealm(string realm);
+        IEnumerable<T> GetHeroesByEquipment(string equipment);
+        IEnumerable<T> GetHeroesByAbility(string ability);
+        IEnumerable<T> GetHeroesByEvent(IEvent _event);
+        IEnumerable<T> GetHeroesFromDungeons();
 
-        IEnumerable<IRelic> GetUniqueRelicsByName(string name);
-        IEnumerable<IRecordMateria> GetRecordMateriaByName(string name);
+        IEnumerable<IRelic> GetUniqueRelicsByHeroName(string heroName);
+        IEnumerable<IRecordMateria> GetRecordMateriaByHeroName(string heroName);
 
-        IMemoryCrystal GetMC1ByName(string name);
-        IMemoryCrystal GetMC2ByName(string name);
+        IMemoryCrystal GetMC1ByHeroName(string heroName);
+        IMemoryCrystal GetMC2ByHeroName(string heroName);
 
-        IEnumerable<string> GetEquipmentByName(string name);
-        IDictionary<string, int> GetAbilitiesByName(string name);
-        IDictionary<string, int> GetStatsByName(string name);
+        IEnumerable<string> GetEquipmentByHeroName(string heroName);
+        IDictionary<string, int> GetAbilitiesByHeroName(string heroName);
+        IDictionary<string, int> GetStatsByHeroName(string heroName);
 
-        string GetRealmByName(string name);
-        string GetAppearanceByName(string name);        
+        string GetRealmByHeroName(string heroName);
+        string GetAppearanceByHeroName(string heroName);        
 
-        void AddNewHero(IHero hero);
+        void AddNewHero(T hero);
         
     }
 }

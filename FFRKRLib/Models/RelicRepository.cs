@@ -1,4 +1,4 @@
-﻿namespace FFRKR.Core.Models {
-    internal class RelicRepository {
+﻿namespace FFRKR.Repository {
+    public class RelicRepository {
     }
 }

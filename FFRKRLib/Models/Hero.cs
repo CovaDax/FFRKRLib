@@ -64,19 +64,19 @@ namespace FFRKR.Core.Models {
         }
 
         private void Initialize() {
-            _realm = _repo.GetRealmByName(Name);
-            _mc1 = _repo.GetMC1ByName(Name);
-            _mc2 = _repo.GetMC2ByName(Name);
-            _equipment = _repo.GetEquipmentByName(Name);
-            _abilities = _repo.GetAbilitiesByName(Name);
-            _uniqueRelics = _repo.GetUniqueRelicsByName(Name);
-            _rm = _repo.GetRecordMateriaByName(Name);
-            _appearance = _repo.GetAppearanceByName(Name);
+            _realm = _repo.GetRealmByHeroName(Name);
+            _mc1 = _repo.GetMC1ByHeroName(Name);
+            _mc2 = _repo.GetMC2ByHeroName(Name);
+            _equipment = _repo.GetEquipmentByHeroName(Name);
+            _abilities = _repo.GetAbilitiesByHeroName(Name);
+            _uniqueRelics = _repo.GetUniqueRelicsByHeroName(Name);
+            _rm = _repo.GetRecordMateriaByHeroName(Name);
+            _appearance = _repo.GetAppearanceByHeroName(Name);
             setStats();
         }
 
         private void setStats() {
-            IDictionary<string, int> stats = _repo.GetStatsByName(Name);
+            IDictionary<string, int> stats = _repo.GetStatsByHeroName(Name);
             _hp = stats["HP"];
             _atk = stats["ATK"];
             _mag = stats["MAG"];
